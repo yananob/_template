@@ -13,5 +13,5 @@ mkdir -p ./.github/workflows/
 cp -rpv ./_cf-common/.github/workflows/ ./.github/workflows/
 ln -s ./_cf-common/test/phpstan.neon .
 cp -pv ./_cf-common/deploy/RENAME_deploy.sh ./deploy.sh
-sed -i 's/{CLOUD_FUNCTION_NAME}/XXXX/' bash ./deploy.sh
+sed -i 's/{CLOUD_FUNCTION_NAME}/XXXX/' ./deploy.sh
 ```
