@@ -2,4 +2,4 @@ blank_issues_enabled: true
 contact_links:
   - name: Issue
     about: Issue template
-    url: https://github.com/_template/issues/new?projects=yananob/3&labels=kaizen
+    url: https://github.com/yananob/_template/issues/new?projects=yananob/3&labels=kaizen
