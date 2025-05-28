@@ -1,5 +1,0 @@
-blank_issues_enabled: false
-contact_links:
-  - name: Issue
-    about: Issue template
-    url: https://github.com/yananob/_template/issues/new?template=bug.md&projects=yananob/3&labels=kaizen
