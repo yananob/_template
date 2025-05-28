@@ -3,7 +3,7 @@ name: Feature request
 about: Suggest an idea for this project
 title: ''
 labels: feature
-projects: yananob/3
+projects: ['yananob/3']
 assignees: ''
 
 ---
