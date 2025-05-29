@@ -1,5 +1,5 @@
 ---
-name: 
+name: default
 about: 
 title: ''
 labels: ''
