@@ -1,6 +1,6 @@
 ---
 name: default
-about: 
+about: General template
 title: ''
 labels: ''
 assignees: ''
