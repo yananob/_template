@@ -14,3 +14,17 @@ ln -s ./_cf-common/test/phpstan.neon .
 cp -pv ./_cf-common/deploy/RENAME_deploy.sh ./deploy.sh
 sed -i 's/{CLOUD_FUNCTION_NAME}/XXXX/' ./deploy.sh
 ```
+
+## GitHub actionでのデプロイ
+
+1. 以下見る https://console.cloud.google.com/iam-admin/serviceaccounts/details/103234346909118223436/access?hl=ja&inv=1&invt=Abzjyw&project=nobu5-393106
+2. ロール別に表示
+3. 既存のリポジトリの内容を参考に、同じように追加する
+
+コマンドは以下のようになるはずだが、エラーになる
+```
+gcloud iam service-accounts add-iam-policy-binding \
+  "cloud-run-functions-deployer@$nobu5-393106.iam.gserviceaccount.com" \
+  --member="principalSet://iam.googleapis.com/projects/1035100650942/locations/global/workloadIdentityPools/github-actions-pool/attribute.repository/yananob/oml-empowered" \ 
+  --role="roles/iam.workloadIdentityUser"
+```
