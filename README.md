@@ -19,7 +19,7 @@ ln -s ./_cf-common/test/phpstan.neon .
 2. ロール別に表示
 3. 既存のリポジトリの内容を参考に、同じように追加する
 
-コマンドは以下のようになるはずだが、エラーになる
+コマンドは以下のようになるはずだが、エラーになるので、上記GUIでの設定にしている
 ```
 gcloud iam service-accounts add-iam-policy-binding \
   "cloud-run-functions-deployer@$nobu5-393106.iam.gserviceaccount.com" \
