@@ -16,8 +16,7 @@ ln -s ./_cf-common/test/phpstan.neon .
 ## GitHub actionでのデプロイ
 
 1. 以下見る https://console.cloud.google.com/iam-admin/serviceaccounts/details/103234346909118223436/access?hl=ja&inv=1&invt=Abzjyw&project=nobu5-393106
-2. ロール別に表示
-3. 既存のリポジトリの内容を参考に、同じように追加する
+2. 既存のリポジトリの内容を参考に、同じように追加する
 
 コマンドは以下のようになるはずだが、エラーになるので、上記GUIでの設定にしている
 ```
