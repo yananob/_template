@@ -6,11 +6,11 @@ git submodule add git@github.com:yananob/cloud-functions-common _cf-common
 
 # symbolic links
 cp -pv ./_cf-common/.gitignore .
-ln -s ./_cf-common/.gcloudignore .
+cp -pv ./_cf-common/.gcloudignore .
 cp -pv ./_cf-common/.gitattributes .
 mkdir -p ./.github/workflows/
 cp -rpv ./_cf-common/.github/workflows/ ./.github/workflows/
-ln -s ./_cf-common/test/phpstan.neon .
+cp -pv ./_cf-common/test/phpstan.neon .
 ```
 
 ## GitHub actionでのデプロイ
