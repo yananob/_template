@@ -1,6 +1,6 @@
 {
-    "name": "yananob/XXX",
-    "description": "yananob/XXX",
+    "name": "yananob/xxx",
+    "description": "yananob/xxx",
     "license": "proprietary",
 
     "require": {
@@ -14,12 +14,12 @@
     },
     "autoload": {
         "psr-4": {
-            "MyApp\\": "./src/"
+            "App\\": "./src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "MyTest\\": "./tests/"
+            "Tests\\": "./tests/"
         }
     }
 }
