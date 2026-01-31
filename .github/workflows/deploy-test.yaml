@@ -1,14 +1,14 @@
 name: Deploy Cloud Functions (test)
 on:
-  push:
-    branches:
-      - test
-  pull_request:
-    types:
-      - 'opened'
-      - 'synchronize'
-      - 'edited'
-      - 'reopened'
+  # push:
+  #   branches:
+  #     - test
+  # pull_request:
+  #   types:
+  #     - 'opened'
+  #     - 'synchronize'
+  #     - 'edited'
+  #     - 'reopened'
   workflow_dispatch:
 
 concurrency:
@@ -42,3 +42,5 @@ jobs:
       memory: '256M'
       http_timeout: '5m'
       event_timeout: '20m'
+      environment_variables: |-
+        APP_ENV=test

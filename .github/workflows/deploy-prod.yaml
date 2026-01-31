@@ -1,8 +1,8 @@
 name: Deploy Cloud Functions (production)
 on:
-  push:
-    branches:
-      - main
+  # push:
+  #   branches:
+  #     - main
   workflow_dispatch:
 
 concurrency:
@@ -36,3 +36,5 @@ jobs:
       memory: '256M'
       http_timeout: '5m'
       event_timeout: '20m'
+      environment_variables: |-
+        APP_ENV=production
