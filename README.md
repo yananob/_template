@@ -15,7 +15,7 @@ cp -pv ./_cf-common/test/phpstan.neon .
 
 ## GitHub actionでのデプロイ
 
-1. 以下見る https://console.cloud.google.com/iam-admin/serviceaccounts/details/103234346909118223436/access?hl=ja&inv=1&invt=Abzjyw&project=nobu5-393106
+1. 以下見る https://console.cloud.google.com/projectselector2/iam-admin/serviceaccounts?hl=ja&inv=1&invt=Abzjyw&supportedpurview=project
 2. 既存のリポジトリの内容を参考に、同じように追加する
 
 コマンドでもできるはずだが、エラーになるので、上記GUIでの設定にしている
