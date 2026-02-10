@@ -17,5 +17,5 @@ cp -pv ./_cf-common/test/phpstan.neon .
 
 1. 以下見る https://console.cloud.google.com/projectselector2/iam-admin/serviceaccounts?hl=ja&inv=1&invt=Abzjyw&supportedpurview=project
 2. 既存のリポジトリの内容を参考に、同じように追加する
-
+    - Cloud Run Deployer SAに、既存のプリンシプル〜タブで追加する
 コマンドでもできるはずだが、エラーになるので、上記GUIでの設定にしている
