@@ -12,4 +12,4 @@ curl localhost:8081 \
         },
         "subscription": "projects/test-pj/subscriptions/XXX-event"
       }'
-# data: php -r 'echo base64_encode("{\"topic\": \"XXX-event\", \"command\": \"batch-update-books\"}");'
+# data: php -r 'echo base64_encode("{\"topic\": \"XXX-event\", \"command\": \"COMMAND\"}");'
