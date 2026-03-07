@@ -3,12 +3,13 @@
 ```
 # submodule
 git submodule add git@github.com:yananob/cloud-functions-common _cf-common
+# →　もういらんかも？
 
-# symbolic links
+<!-- # symbolic links
 cp -pv ./_cf-common/.gitignore .
 cp -pv ./_cf-common/.gcloudignore .
 cp -pv ./_cf-common/.gitattributes .
-cp -pv ./_cf-common/test/phpstan.neon .
+cp -pv ./_cf-common/test/phpstan.neon . -->
 ```
 
 ## GitHub actionでのデプロイ
