@@ -1,4 +1,4 @@
-# （作成中）Cloud Functionsを使ったアプリ
+# （要更新）Cloud Functionsを使ったアプリ
 
 
 # 開発方針
