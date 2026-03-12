@@ -25,7 +25,7 @@
 
 | 変数名 | 説明 | 備考 |
 | :--- | :--- | :--- |
-| `APP_ENV` | 実行環境の指定。`production`, `test`, `development` のいずれか。 | デフォルトは `development` |
+| `APP_ENV` | 実行環境の指定。`production`, `test`, `development` のいずれか。 | デフォルト値はなしにする（設定の問題が分かりやすくなるよう）|
 | `FIREBASE_SERVICE_ACCOUNT` | Firestore 操作用のサービスアカウントキー（JSON形式）。 | サーバーサイドでの認証に使用 |
 | `OPENAI_KEY_XXXX` | OpenAI API のシークレットキー。 | `XXXX` はアプリごとに変える |
 | `K_SERVICE` | Cloud Functions のサービス名。 | URLの組み立てなどに使用 |
