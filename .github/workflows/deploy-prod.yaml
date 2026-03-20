@@ -21,7 +21,7 @@ jobs:
       service_account_name: 'cloud-run-functions-deployer'
       wip_pool_name: 'github-actions-pool'
       wip_provider_name: 'github-provider'
-      runtime: php84
+      runtime: php83
       secrets_config: |-
         SECRET_KEYS
       # gcs_source_dir: ./public/
