@@ -64,3 +64,15 @@ $firestore = new FirestoreClient([
 - **デプロイとシークレット**:
   デプロイは GitHub Actions (`.github/workflows/deploy-*.yaml`) で自動化します。機密性の高い環境変数（`FIREBASE_SERVICE_ACCOUNT` 等）は、GitHub Secrets に保存され、デプロイ時に Cloud Functions の環境変数として設定されます。
 - 処理状況が分かるように、適宜ログを出力する。ログ出力には monolog を使う。
+
+---
+
+## 5. テストコードの方針
+
+テストコードを記載する際は、以下の指針に従ってください。
+
+- **古典派（Classical School）の考え方**:
+  - モックの使用は最小限にとどめます。
+  - ユニットテストにおいても、依存先を含めた実際のクラスの組み合わせでテストすることを優先します。
+- **振る舞いのテスト**:
+  - 内部の実装詳細ではなく、外部から見た振る舞い（Behavior）をテストできるようにします。

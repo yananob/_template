@@ -16,6 +16,6 @@ FunctionsFramework::cloudEvent('main_event', 'main_event');
 function main_event(CloudEventInterface $event): void
 {
     $logger = new \Monolog\Logger('cloud_event_logger');
-    $logger->pushHandler(new \Monolog\Handler\StreamHandler('php://stdout', \Monolog\Logger::INFO));
-    $logger->log("Hello, World!");
+    $logger->pushHandler(new \Monolog\Handler\StreamHandler('php://stdout', \Monolog\Level::Info));
+    $logger->info("Hello, World!");
 }

@@ -32,7 +32,7 @@ class AppConfig
     {
         return match (self::getEnvironment()) {
             'production' => '{APP-NAME}',
-            'test', => '{APP-NAME}-test',
+            'test' => '{APP-NAME}-test',
             default => '{APP-NAME}-test',
         };
     }
@@ -46,8 +46,8 @@ class AppConfig
     public static function getBasePath(): string
     {
         return match (self::getEnvironment()) {
-            'production' => '/'{APP-NAME}',
-            'test' => '/'{APP-NAME}-test',
+            'production' => '/{APP-NAME}',
+            'test' => '/{APP-NAME}-test',
             default => '',
         };
     }
