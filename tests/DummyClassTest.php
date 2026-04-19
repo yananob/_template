@@ -3,8 +3,8 @@
 namespace Tests;
 
 use PHPUnit\Framework\TestCase;
-use App\SomeClass;
+use App\DummyClass;
 
-final class SomeClassTest extends TestCase
+final class DummyClassTest extends TestCase
 {
 }

@@ -2,6 +2,6 @@
 
 namespace App;
 
-class SomeClass
+class DummyClass
 {
 }
