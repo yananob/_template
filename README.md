@@ -1,4 +1,4 @@
-# （要更新）Cloud Functionsを使ったアプリ
+# {{VALUES_FUNCTION_NAME}}
 
 
 # 開発方針
