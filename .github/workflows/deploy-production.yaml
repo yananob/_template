@@ -71,5 +71,6 @@ jobs:
         with:
           submodules: 'true'
       - name: Add comment to PR
+        if: env.PR_NUMBER != ''
         run: |
           gh pr comment $PR_NUMBER --body "Deployed to url https://${{ secrets.GCP_REGION }}-${{ secrets.GCP_PROJECT_ID }}.cloudfunctions.net/${{ needs.prepare.outputs.function_name }} [skip ci]"
