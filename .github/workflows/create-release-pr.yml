@@ -1,4 +1,4 @@
-name: Auto Create PR from test to main
+name: Create PR from test to main
 on:
   push:
     branches:
@@ -11,7 +11,7 @@ jobs:
       pull-requests: write
       contents: read
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Create PR if not exists
         env:
@@ -25,8 +25,8 @@ jobs:
             gh pr create \
               --base main \
               --head test \
-              --title "Auto-PR: test to main" \
-              --body "testブランチの更新をmainに反映します。自動生成されたPRです。" \
+              --title "Release test to main [Auto-PR]" \
+              --body "testブランチをmainに反映します。自動生成されたPRです。" \
               --fill
           else
             echo "PR #${PR_EXISTS} がすでにあるから、作成はスキップするな。"
