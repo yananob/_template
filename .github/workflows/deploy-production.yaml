@@ -8,6 +8,7 @@ on:
 
 concurrency:
   group: XXX-deploy-production
+  cancel-in-progress: true
 
 permissions:
   contents: 'read'
