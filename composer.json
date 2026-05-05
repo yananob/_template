@@ -1,6 +1,6 @@
 {
-    "name": "yananob/xxx",
-    "description": "yananob/xxx",
+    "name": "yananob/{{VALUES_FUNCTION_NAME}}",
+    "description": "yananob/{{VALUES_FUNCTION_NAME}}",
     "license": "proprietary",
 
     "require": {
