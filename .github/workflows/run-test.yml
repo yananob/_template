@@ -14,6 +14,7 @@ on:
 
 concurrency:
   group: XXX-run-test
+  cancel-in-progress: true
 
 defaults:
   run:

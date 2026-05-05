@@ -16,6 +16,7 @@ on:
 
 concurrency:
   group: {{VALUES_FUNCTION_NAME}}-deploy-test
+  cancel-in-progress: true
 
 permissions:
   contents: 'read'
