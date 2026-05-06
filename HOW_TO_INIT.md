@@ -3,7 +3,7 @@
 ```
 # submodule
 git submodule add git@github.com:yananob/cloud-functions-common _cf-common
-git submodule add git@github.com:yananob/_template _template
+git submodule add git@github.com:yananob/_template _template-cloudfunctions
 ```
 
 ## GitHub actionでのデプロイ
